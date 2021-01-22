@@ -1,0 +1,61 @@
+.htmlSections {    
+    background-color: #333;
+    font: .75em courier;
+    color: white;
+    padding:10px;
+    /*display: flex;*/
+    
+}
+
+.htmlSections ul {
+    border: dashed white 1px;
+    padding-left: 20px;
+}
+
+.htmlSections li{
+    list-style-type: none;
+    border: solid black 1px;
+}
+
+/*-------------------
+
+-------------------*/
+
+.comment{
+    color: greenyellow;
+}
+
+
+
+.inlineblock ul {
+    list-style-type: none;
+    ;
+}
+
+/*-------------------
+
+-------------------*/
+
+.attributes {
+    background-color: #AAA;
+    padding: 1em;
+}
+.attributes ul {
+    color: white;
+}
+
+.attributes {}
+
+/*-------------------
+
+-------------------*/
+
+.graphs {
+    background-color: orange;
+    font: 12px;
+    padding: 10px
+}
+
+.graphs ul {
+    border: solid black 1px;
+}
