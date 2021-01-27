@@ -1,21 +1,35 @@
-.htmlSections {    
+.lists ul{
+    list-style-type: none;
+}
+/*-------------------
+
+-------------------*/
+.nav{
+    display:inline;
+    position:relative;
+}
+/*-------------------
+
+-------------------*/
+
+.htmlSections {   
+    position:relative; 
+    margin:right;
+
     background-color: #333;
     font: .75em courier;
     color: white;
     padding:10px;
-    /*display: flex;*/
-    
+
+    max-width: 800px;
+    width: 90%;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .htmlSections ul {
-    border: dashed white 1px;
     padding-left: 20px;
 }
 
-.htmlSections li{
-    list-style-type: none;
-    border: solid black 1px;
-}
 
 /*-------------------
 
@@ -26,36 +40,61 @@
 }
 
 
-
-.inlineblock ul {
-    list-style-type: none;
-    ;
-}
-
 /*-------------------
 
 -------------------*/
 
 .attributes {
-    background-color: #AAA;
+    background-color: blue;
     padding: 1em;
+    margin: 80px;
+    color: white;
+    max-width: 30%;
+    float: right;
+    
+    position:absolute;
+    border:greenyellow solid;
 }
 .attributes ul {
     color: white;
 }
 
-.attributes {}
 
 /*-------------------
 
 -------------------*/
 
-.graphs {
+.tags {
     background-color: orange;
     font: 12px;
-    padding: 10px
+    width: 30%;
+    margin: .6em;
+    padding: 10px;
 }
 
-.graphs ul {
+.tags ul {
     border: solid black 1px;
+    padding-left: 0;
+    
+}
+
+.tags li{
+    border: dotted white 1px;
+    
+}
+
+.tags ul .secondary{
+    color: white;
+    font: 12px italic;
+    padding-left:1em ;
+}
+/*-------------------
+
+-------------------*/
+
+#tagsbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: greenyellow;
 }
