@@ -1,6 +1,11 @@
 .lists ul{
     list-style-type: none;
 }
+
+.comment{
+    color: greenyellow;
+}
+
 /*-------------------
 
 -------------------*/
@@ -8,12 +13,16 @@
     display:inline;
     position:relative;
 }
-/*-------------------
 
+/*-------------------
+html and attributes
 -------------------*/
+#html-attributes{
+    display: flex;
+}
 
 .htmlSections {   
-    position:relative; 
+     
     margin:right;
 
     background-color: #333;
@@ -22,7 +31,6 @@
     padding:10px;
 
     max-width: 800px;
-    width: 90%;
     font-family:'Courier New', Courier, monospace;
 }
 
@@ -31,28 +39,15 @@
 }
 
 
-/*-------------------
-
--------------------*/
-
-.comment{
-    color: greenyellow;
-}
-
-
-/*-------------------
-
--------------------*/
-
 .attributes {
     background-color: blue;
-    padding: 1em;
-    margin: 80px;
+    padding: 2%;
     color: white;
+    shape-outside: circle(50% at 0 0) padding-box;
+
     max-width: 30%;
-    float: right;
     
-    position:absolute;
+    border-radius:50%;
     border:greenyellow solid;
 }
 .attributes ul {
