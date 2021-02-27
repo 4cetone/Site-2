@@ -1,0 +1,40 @@
+*-------------------
+
+-------------------*/
+
+.tags {
+    background-color: orange;
+    font: 12px;
+    width: 30%;
+    margin: .6em;
+    padding: 10px;
+}
+
+.tags ul {
+    border: solid black 1px;
+    padding-left: 0;
+    
+}
+
+.tags li{
+    border: dotted white 1px;
+    
+}
+
+.tags ul .secondary{
+    color: white;
+    font: 12px italic;
+    padding-left:1em ;
+}
+/*-------------------
+
+-------------------*/
+
+#tagsbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: lightgoldenrodyellow;
+
+    border-radius:10%;
+}
