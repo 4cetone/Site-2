@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     margin:0%;
+    /* position:relative; */
 }
 
 .comment{
@@ -8,48 +9,111 @@
 }
 
 body{
-    position:absolute;
+    position:relative;
+    background-color: #c3e3aa;
+    font-family:'roboto';
+    font-size: .8em;
 }
+
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
 
 /*-------------------
 utility classes ^^ and body
 nav vv
 -------------------*/
 .navbar{
-    outline: blue solid 2px;
-    position:relative;
+    background-color: green;
+    padding: .3em;
+    font-size: 1.5em;
+    
+    position:fixed;
+    width:100%;
+
+    z-index: 3;
+    color:#cade73;
+
+    font-family:'josefin sans';
+    padding-left:1em;
 }
 
-nav li{
+.navbar a{
+  color:white;
+  text-decoration:none;
+  padding-right:1em;
+  vertical-align: middle;
+}
+
+.navbar ul{
+  display: inline;
+  padding-left: 0;
+}
+
+.navbar li{
     display:inline;
-
-    list-style-type: none;
 }
+
+#home-icon{
+    height:30px;
+    display:inline-block;
+    position:relative;
+    border-radius: 50%;
+}
+
+.spacemaker{
+    display:relative;
+    height:4em;
+    visibility: hidden;
+}
+
 /*-------------------
 html and attributes
 -------------------*/
-#intro{
+.intro{
+    
     position:relative;
-    outline: lightgreen dashed 3px;
-}
-.lefttxt{
-    color: red;
+    background-color: #ff6ba4;
+    display:block;
+
+    margin:10em 12px;
+
+    width:95%;
+    margin:auto;
+    border-radius: 3%;
     padding:1em;
-    outline:salmon 2px solid;
-    max-width: 30%;
 
+}
 
+#lefttxt{
+    color: #570b06;
+    margin:1em;
+    /* outline:salmon 2px solid; */
+
+    display:inline-block;
+    position:relative;
+    height:40%;
+    width:40%;
+    overflow:hidden;
+    margin-bottom:20px;
 }
 
 #htmlblock{  
     background-color: #333;
     color: white;
-    font-size:.7em;
     font-family:'Courier New', Courier, monospace;
+
+    padding:1em;
+
+    position: relative;
     display:inline-block;
-    outline: black dashed 1px;
-    padding:10px;
-    width: 50em;
+
+    width: 55%;
+    height:200px;
+    overflow:hidden;
+    border-radius: 3%;
 }
 #htmlblock ul {
     padding-left: 20px;

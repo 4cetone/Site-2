@@ -1,81 +1,96 @@
-
 <!DOCTYPE html>
 <html>
-<head> 
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <title>HTML Sheet</title>
-</head> 
-<body>
-    <nav class="navbar">
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <title>HTML Sheet</title>
+    
+        <!--fonts-->
+        <link rel="stylesheet" href="" />
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <nav class="navbar">
+            <a href="#"><img id="home-icon" alt="icon of kermit from the muppets" src="https://pbs.twimg.com/profile_images/614617043120226305/vk_Sl22e_400x400.jpg"></a>
         <ul>
-            <li><a href="/">HTML Sheet</a></li>
-            <li><a href="index.html">index</a></li>
-        </ul>
-    </nav>
-
-<!---->
-    <section id="intro">
-        <article class="lefttxt">
-            <p>Markup language: To encode text formatting we use a diff set of tags to tell the comp when to start formatting and when to stop (in html tag is btwn &lt;&gt;</p>
-            <p> html you can control the LOOK of the form but u cant add functionality without another language. like PHP</p>
-            <p>SO WE KNOW ALL THE BASICS. HTML always has:a &lt;!DOCTYPE&gt; &lt;html&gt; &lt;head&gt; and &lt;body&gt; tag.</p>
-        </article>
-
-        <article id="htmlblock">   
-            <ul>
-            <li>&lt;!DOCTYPE html &gt; <span class="comment">!--identifies the version of html</span></li>
-            <li>&lt;html&gt;</li> 
+                <li><a href="/">HTML Sheet</a></li>
+                <li><a href="index.html">index</a></li>
+                <li><a href="css.html">css</a></li>
+                <li><a href="networking.html">networking</a></li>
+            </ul>
+        </nav>
+        <div class="spacemaker">..</div>
+    
+        <section class="intro">
+            <article id="lefttxt">
+                <p>Markup language: To encode text formatting we use a diff set of tags to tell the comp when to start
+                    formatting and when to stop (in html tag is btwn &lt;&gt;)</p>
+                <p> In HTML you can control the LOOK of the form but u cant add functionality without another language. like
+                    PHP</p>
+                <p>SO WE KNOW ALL THE BASICS. HTML always has:a &lt;!DOCTYPE&gt; &lt;html&gt; &lt;head&gt; and &lt;body&gt;
+                    tag.</p>
+            </article>
+    
+            <article id="htmlblock">
                 <ul>
-                    <li>&lt;head&gt; <span class="comment">!--this is the header. Where u store the metadata...</span></li>
+                    <li>&lt;!DOCTYPE html &gt; <span class="comment">!--identifies the version of html</span></li>
+                    <li>&lt;html&gt;</li>
                     <ul>
-                        <li>&lt;title&gt;Holmes list &lt;/title&gt;</li></ul>
-                    <li>&lt;/head&gt; <span class="comment">&lt;!-- this is the header  --&gt;</span></li>
-                    <li>&lt;body&gt;</li>
-                    <ul>
-                        <li>&lt;h1&gt;good stories fam&lt;/h1&gt; <span class="comment">&lt;!-- headings --&gt;</span></li>
-                        <li>&lt;h1&gt;good stories fam&lt;/h1&gt; <span class="comment">&lt;!-- headings --&gt;</span></li>
-                        <li>&lt;p&gt;&lt;strong&gt;the six napoleons&lt;/strong&gt; this ones fuckin good it kinda discusses how immigrants are mistreated and ignored by the police it is good </li>
-                    
-                        <li><span class="comment">&lt;!-- bullet point lists --&gt;</span></li>
-                        <li>&lt;ul&gt;</li>
+                        <li>&lt;head&gt; <span class="comment">!--this is the header. Where u store the metadata...</span>
+                        </li>
+                        <ul>
+                            <li>&lt;title&gt;Holmes list &lt;/title&gt;</li>
+                        </ul>
+                        <li>&lt;/head&gt; <span class="comment">&lt;!-- this is the header  --&gt;</span></li>
+                        <li>&lt;body&gt;</li>
+                        <ul>
+                            <li>&lt;h1&gt;good stories fam&lt;/h1&gt; <span class="comment">&lt;!-- headings --&gt;</span>
+                            </li>
+                            <li>&lt;h1&gt;good stories fam&lt;/h1&gt; <span class="comment">&lt;!-- headings --&gt;</span>
+                            </li>
+                            <li>&lt;p&gt;&lt;strong&gt;the six napoleons&lt;/strong&gt; this ones fuckin good</li>
+                            <li><span class="comment">&lt;!-- bullet point lists --&gt;</span></li>
+                            <li>&lt;ul&gt;</li>
                             <ul>
-                                <li>&lt;li&gt;List item 1&lt;/li&gt;</li>
+                                </li>
                                 <li>&lt;li&gt;Giant Rat of Sumatra&lt;/li&gt;</li>
                             </ul>
-                        <li>&lt;/ul&gt;</li>
-                
-                        <li>&lt;!-- numbered lists--&gt;</li> 
-                            <li>&lt;ol&gt;</li>
-                                <ul><li>&lt;li&gt;Shoscombe Valley Place&lt;/li&gt;</li>
-                                <li>&lt;li&gt;Lady Francis Carfax&lt;/li&gt;</li></ul>
-                            <li>&lt;/ol&gt;</li>
-                    </ul>
-                    <li>&lt;/body&gt;</li>
-                </ul>
-            <li>&lt;/html&gt;</li>
-        </ul>
-        </article>
-    </section>
-    <!---->
+                            <li>&lt;/ul&gt;</li>
     
-    <section class="attributes">
-        <p>Any markup with information about your page would go into the head tag. Then any markup with the content of the page (what displays for a user) would go into the body tag.</p>
-        <h2>Attributes:</h2>
-        <p>
-        All html tags can have attributes, that provide information about an element. </p>
-        <ul>
-            <li>&lt;tagname attributename=”attributevalue”&gt;content&lt;/tagname&gt;</li>
-            <li>&lt;h1 title=”Best sherlock story”&gt;Devil’s Foot&lt;/h1&gt;</li>
-            <li>P{ color:red}</li>
-            <li>Selector { property }</li>
-            <li>Always quote attribut values.</li>
-            <li>Always use lowercase attributes.</li>
-            <li>&lt;h1 title=”Best sherlock story”&gt;</li>
-            <li>Double quote around attribute values.</li>
-            <li></li>
-        </ul> 
-        </p>
-    </section>
+                            <li>&lt;!-- numbered lists--&gt;</li>
+                            <li>&lt;ol&gt;</li>
+                            <ul>
+                                <li>&lt;li&gt;Shoscombe Valley Place&lt;/li&gt;</li>
+                                <li>&lt;li&gt;Lady Francis Carfax&lt;/li&gt;</li>
+                            </ul>
+                            <li>&lt;/ol&gt;</li>
+                        </ul>
+                        <li>&lt;/body&gt;</li>
+                    </ul>
+                    <li>&lt;/html&gt;</li>
+                </ul>
+            </article>
+        </section>
+<section class="attributes">
+	<p>Any markup with information about your page would go into the head tag. Then any markup with the content of the
+		page (what displays for a user) would go into the body tag.</p>
+	<h2>Attributes:</h2>
+	<p>
+		All html tags can have attributes, that provide information about an element. </p>
+	<ul>
+		<li>&lt;tagname attributename=”attributevalue”&gt;content&lt;/tagname&gt;</li>
+		<li>&lt;h1 title=”Best sherlock story”&gt;Devil’s Foot&lt;/h1&gt;</li>
+		<li>P{ color:red}</li>
+		<li>Selector { property }</li>
+		<li>Always quote attribut values.</li>
+		<li>Always use lowercase attributes.</li>
+		<li>&lt;h1 title=”Best sherlock story”&gt;</li>
+		<li>Double quote around attribute values.</li>
+		<li></li>
+	</ul>
+	</p>
+</section>
 </section>
     
 
