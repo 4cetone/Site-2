@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>CSS Sheet</title>
+	</head> 
+
+<!------------------------
+	End of <head>
+	Start of <body>
+-------------------------->
+	<body>
+		<h1>CSS Sheet</h1>
+		<p>Line 1<p>
+		<p style="position: absolute;">Line 2<p>
+		<p>Line 3<p>
+		
+
+
+
+
+<div style="background-color: #A5A5A5">
+CSS
+
+Inline CSS: Adding CSS directly in the HTML element (dont do this)
+	&lt;body&gt;
+&lt;h1 style:"color:red"&gt;Hello World! &lt;/h1&gt;
+&lt;/body&gt;
+
+Internal CSS: Using &lt;style&gt; tags within a single document
+&lt;head&gt;
+		&lt;style type="text/css"&gt;
+			h1{
+				color:blue
+			}
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;Hello World! &lt;/h1&gt;
+
+External css: Linking an external .css style file (this is the best way to impliment css)
+Style.css -&gt;
+H1{
+	color:green
+}
+
+LOL.html -&gt;
+&lt;head&gt;
+	&lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;
+&lt;body&gt;
+	&lt;h1&gt;Hello World!&lt;/h1&gt;
+
+CSS selectors:
+
+Selector: An ‘a’ tag is a link this a tag would apply it to all links everywhere. If you want it to affect a specific link u need to include a class or and ID
+Properties:
+(Always end these with a semicolon)
+
+Don’t do inline CSS UNLESS  its a rock solid thing that youre never gonna change. Most sites do change so its generally not a good idea
+
+Colors in CSS:
+Color names, HTML5 color names, hex code, RGB all work
+Properties:
+This is a link to a list of properties, but heres some basic ones:
+
+
+Classes vs IDs:
+You can repeat a class but not an ID. I mean you can i think but you shouldnt. A class is something like “red bolded baskerville” that you can be multipurpose
+If you dont want to deal with it, just use classes always
+To target a class you prefix it with .
+
+Backgrounds in CSS:
+
+The properties to set backgrounds are:
+background-color
+Background-image: url(“paper.gif”);
+By default repeats to cover entire element
+Background-repeat: repeat-x; OR repeat-y; OR no-repeat;
+Background-position: right top;
+Used to specify the position of the bg image
+Background-attachment: scroll|fixed|local|initial|inherit;
+Opacity: 0.3;
+
+Notes on opacity: When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read. If you don’t want the entire element to be translucent use rgba color values instead ex- background: rgba(0, 128, 0, 0.3)
+
+
+
+
+
+You can set all of these individually
+p{
+	margin-top: 5px;
+	margin-bottom: 5px;;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+Or in one go
+p{
+	margin: 10px 5px 10px 5px
+	/*it goes clockwise: top right bottom left*/
+}
+
+p{
+	margin: 5px 10px
+	/*This will set top/bottom to 5px and right/left to 10px*/
+	margin-top: 200px
+}
+
+
+
+*{
+    /*stuff within an *{ }  will apply to EVERYTHING*/
+}
+
+Borders can have styles! Dotted/solid/dashed/double. 
+Some parts of this box model can have color (border). Others cant (margin/padding)
+
+
+If you want to target a specific Element within a class you can do that like so:
+
+.box-1 h1{
+
+	Font-family: Clarendon
+}
+
+Selectors 
+Classes & IDs
+Pseudo-Classes 
+Pseudo-classes are a way to select HTML elements based on their state as opposed to their HTML structur
+Pseudo-classes must always be applied to an existing selector. Their "flag character" is the colon (":"
+The focus pseudo class is when a user has chosen to begin interacting with an element, often when the click into a form input such that the input is then ready to accept keyboard input.
+Hover:
+:link
+:visited
+The active pseudo-class applies when an element is activated. This happens in the time between when the user clicks their mouse and they release it.The active pseudo-class applies when an element is activated. This happens in the time between when the user clicks their mouse and they release it.
+Contextual Selectors: selectors placed in a specific oder wih a space btw each. Organized in a way specify a oarticular hierarchy (so th hierarchy depends on th context)
+P a black-box tea { color: red}
+If we applied the following CSS rule then the images INSIDE the paragraph would be set to a width of 100px, but that rule would not apply to the images outside the paragraph. 
+p img {
+    	width: 100px;
+ }
+
+Contextual selection becomes especially useful when you structure your HTML with section tags like header, section, article and footer
+
+Thanks to the "cascading" part of "Cascading Style Sheets", this isn't a problem. That is because CSS has a way to figure out which rule "wins" when styles are conflicting. CSS actually computes a "weight" for each style rule and the one with the greatest weight wins. If you want all the specifics on how this weight is computed you can read more here. For simplicity's sake, the most specific rule wins! 
+
+IDs are most specific because you are directly applying them to the desired HTML element. The rule based on an ID will always win over other rules
+
+You can use the "!important" modifier on a CSS property so that it will guarantee that style will be applied. This is a way for you to override the calculated weight.
+
+One of the easiest ways to slow down your site's performance is to include lots of large, high-quality images. There are two general things to consider when picking your images: what format and how large are they? 
+
+It's important to format and size your image before uploading it to your site, because while you can use CSS to resize it, the browser will download the full image even if you've chosen to display it smaller than it is. 
+
+You can resize images using the width or height properties of CSS like so:
+
+img {
+    width: 100px;
+    height: 100px;
+
+If you only specify one dimension the other eill scale in proportion
+
+
+In Module 2, we saw how you can use the "border-radius" property to make a button with rounded corners. You can do the same to images. Y
+
+background-image CSS property 
+
+Text in images
+It is best to overlay real text rather than use pixelated text. T
+TEXT:
+font-family: helvetica;
+font-weight: 20px;
+font-style: italic/bold/;
+text-decoration:underline;
+text-transform:uppercase;
+Letter-spacing: 0.2em;
+word-spacing: 1em.;
+
+Selectors:
+
+a:hover{
+	color:green
+}
+A:active{
+color:black
+}
+a:visited{
+
+}
+
+
+P1-
+P2
+Values
+What it do
+list-
+style
+
+
+
+
+style-image:
+url(“___”)
+Puts an image to the side of your list. (image wont auto resize)
+text-
+align:
+center / left / right
+
+
+border-
+radius: 10px
+
+
+Round the corners of the border
+Font-
+Size: 150%
+
+
+Makes font 150% of  whatever the parent font size is
+Float
+
+
+
+
+
+
+color
+
+
+
+
+This property sets the foreground color of an element's text content.
+Text-decoration. 
+
+
+underline / line-through /  overline underline / none
+Adds a line across your text.
+None allows you to remove default formatting
+
+
+
+
+Min-height: 300px wont let the block get smaller than 300 px even if the webpage is minmixe
+There are two different ways you can define white space:
+in absolute terms: using an exact number of pixels,
+and in relative terms: using percentages or ems.
+Buttons are a key way that your users will interact with your page. Often buttons are a call to action for your user- so you will want them to stand out!
+
+
+
+
+To import a Google Font, you can copy the font's URL from the Google Fonts library and then paste it in your HTML. For this challenge, we'll import the Lobster font. To do this, copy the following code snippet and paste it into the top of your code editor (before the opening style element):
+&lt;link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"&gt;
+Now you can use the Lobster font in your CSS by using Lobster as the FAMILY_NAME as in the following example:
+font-family: FAMILY_NAME, GENERIC_NAME;.
+The GENERIC_NAME is optional, and is a fallback font in case the other specified font is not available. This is covered in the next challenge.
+Family names are case-sensitive and need to be wrapped in quotes if there is a space in the name. For example, you need quotes to use the "Open Sans" font, but not to use the Lobster font.
+
+Generic font family names are not case-sensitive. Also, they do not need quotes because they are CSS keywords.
+If the font thats missing is installed on your computer youll see it even if the font youre using isnt linked in the html
+
+
+Remember that you can apply multiple classes to an element using its class attribute, by separating each class name with a space. For example:
+&lt;img class="class1 class2"&gt;
+Your image should have a border radius of 50%, making it perfectly circular.
+
+
+id attributes should be unique. Browsers won't enforce this, but it is a widely agreed upon best practice. So please don't give more than one element the same id attribute.
+
+However, an id is not reusable and should only be applied to one element. An id also has a higher specificity (importance) than a class so if both are applied to the same element and have conflicting styles, the styles of the id will be applied.
+
+For this challenge, you will use the [attr=value] attribute selector to style the checkboxes in CatPhotoApp. This selector matches and styles elements with a specific attribute value. For example, the below code changes the margins of all elements with the attribute type and a corresponding value of radio:
+[type='radio'] {
+  margin: 20px 0px 20px 0px;
+}
+Relative units, such as em or rem, are relative to another length value. For example, em is based on the size of an element's font. If you use it to set the font-size property itself, it's relative to the parent's font-size.
+Note: There are several relative unit options that are tied to the size of the viewport. They are covered in the Responsive Web Design Principles section.
+
+
+Every HTML page has a body element.
+
+We can prove that the body element exists here by giving it a background-color of black.
+
+
+Applying multiple class attributes to a HTML element is done with a space between them like this:
+class="class1 class2"
+Note: It doesn't matter which order the classes are listed in the HTML element.
+However, the order of the class declarations in the &lt;style&gt; section is what is important. The second declaration will always take precedence over the first. Because .blue-text is declared second, it overrides the attributes of .pink-text
+ 
+Classes go first then id;s then inline styling
+But wait. There's one last way to override CSS. This is the most powerful method of all. But before we do it, let's talk about why you would ever want to override CSS.
+In many situations, you will use CSS libraries. These may accidentally override your own CSS. So when you absolutely need to be sure that an element has specific CSS, you can use !important
+.Pink-text {
+Color: pink !important;
+}
+A5 is half of FF
+or example, red's hex code #FF0000 can be shortened to #F00. This shortened form gives one digit for red, one digit for green, and one digit for blue.
+After you create your variable, you can assign its value to other CSS properties by referencing the name you gave it.
+background: var(--penguin-skin);
+ 
+rgb(0, 127, 255)
+Basic CSS: Attach a Fallback value to a CSS Variable
+When using your variable as a CSS property value, you can attach a fallback value that your browser will revert to if the given variable is invalid.
+.red-box {
+    background: red;
+    background: var(--red-color);
+ 
+When you create your variables in :root they will set the value of that variable for the whole page.
+You can then over-write these variables by setting them again within a specific element.
+ 
+media query
+ 
+The box-shadow property takes values for
+offset-x (how far to push the shadow horizontally from the element),
+offset-y (how far to push the shadow vertically from the element),
+blur-radius,
+spread-radius and
+color, in that order.
+The blur-radius and spread-radius values are optional.
+You can have multiple shadows by putting commas btwn the two shadows
+Box-shadow: 0 6px 6px rgba(0,0,0,0.23), 0 6px 6px rgba(0,0,0,0.23)
+Like so
+
+
+
+
+Text-transform property
+line -height is space btwen the lines
+Block-level items automatically start on a new line (think headings, paragraphs, and divs) while inline items sit within surrounding content (like images or spans). The default layout of elements in this way is called the normal flow of a document, but CSS offers the position property to override it.
+Changing an element's position to relative does not remove it from the normal flow - other elements around it still behave as if that item were in its default position. Note: Positioning gives you a lot of flexibility and power over the visual layout of a page. It's good to remember that no matter the position of elements, the underlying HTML markup should be organized and make sense when read from top to bottom. This is how users with visual impairments (who rely on assistive devices like screen readers) access your content.
+
+CSS position property is absolute, which locks the element in place relative to its parent container. Unlike the relative position, this removes the element from the normal flow of the document, so surrounding items ignore it. 
+One nuance with absolute positioning is that it will be locked relative to its closest positioned ancestor. If you forget to add a position rule to the parent item, (this is typically done using position: relative;), the browser will keep looking up the chain and ultimately default to the body tag.
+
+
+
+
+One key difference between the fixed and absolute positions is that an element with a fixed position won't move when the user scrolls.
+Like a menu...
+When elements are positioned to overlap (i.e. using position: absolute | relative | fixed | sticky), the element coming later in the HTML markup will, by default, appear on the top of the other elements. However, the z-index property can specify the order of how elements are stacked on top of one another. It must be an integer (i.e. a whole number and not a decimal), and higher values for the z-index property of an element move it higher in the stack than those with lower values.
+Another positioning technique is to center a block element horizontally. One way to do this is to set its margin to a value of auto.
+This method works for images, too. Images are inline elements by default, but can be changed to block elements when you set the display property to block.
+In practice, one of the colors is usually dominant and the complement is used to bring visual attention to certain content on the page.
+Color can be specified as hsl(180, 100%, 50%) hue saturation lightness
+background: linear-gradient(gradient_direction, color 1, color 2, color 3, ...);
+The first argument specifies the direction from which color transition starts - it can be stated as a degree, where 90deg makes a horizontal gradient (from left to right) and 45deg makes a diagonal gradient (from bottom left to top right). The following arguments specify the order of colors used in the gradient.
+Example:
+background: linear-gradient(90deg, red, yellow, rgb(204, 204, 255));
+
+
+CSS has properties for specifying the margin for each side of an element:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+All the margin properties can have the following values:
+
+auto - the browser calculates the margin
+length - specifies a margin in px, pt, cm, etc.
+% - specifies a margin in % of the width of the containing element
+inherit - specifies that the margin should be inherited from the parent element
+Tip: Negative values are allowed.z
+</div>
+</body>
+</html>

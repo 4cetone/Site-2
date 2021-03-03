@@ -1,0 +1,17 @@
+.attributes {
+    background-color: blue;
+    padding: 2%;
+    
+    overflow:clip;
+    shape-outside: circle();
+    
+    min-width: 300px;
+    max-width: 30%;
+    border-radius:60%;
+    
+
+    border:greenyellow solid;
+}
+.attributes ul {
+    color: purple;
+}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../CSS/reset.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/stylesheet.css">
+        <title>HTML Sheet</title>
+    
+        <!--fonts-->
+        <link rel="stylesheet" href="" />
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <nav class="navbar">
+            <a href="#"><img id="home-icon" alt="icon of kermit from the muppets" src="https://pbs.twimg.com/profile_images/614617043120226305/vk_Sl22e_400x400.jpg"></a>
+        <ul>
+                <li><a href="/">HTML Sheet</a></li>
+                <li><a href="index.html">index</a></li>
+                <li><a href="css.html">css</a></li>
+                <li><a href="networking.html">networking</a></li>
+            </ul>
+        </nav>
+        <div class="spacemaker">..</div>
+    
+        <section class="intro">
+            <article id="lefttxt">
+                <p>Markup language: To encode text formatting we use a diff set of tags to tell the comp when to start
+                    formatting and when to stop (in html tag is btwn &lt;&gt;)</p>
+                <p> In HTML you can control the LOOK of the form but u cant add functionality without another language. like
+                    PHP</p>
+                <p>SO WE KNOW ALL THE BASICS. HTML always has:a &lt;!DOCTYPE&gt; &lt;html&gt; &lt;head&gt; and &lt;body&gt;
+                    tag.</p>
+            </article>
+    
+            <article id="htmlblock">
+                <ul>
+                    <li>&lt;!DOCTYPE html &gt; <span class="comment">!--identifies the version of html</span></li>
+                    <li>&lt;html&gt;</li>
+                    <ul>
+                        <li>&lt;head&gt; <span class="comment">!--this is the header. Where u store the metadata...</span>
+                        </li>
+                        <ul>
+                            <li>&lt;title&gt;Holmes list &lt;/title&gt;</li>
+                        </ul>
+                        <li>&lt;/head&gt; <span class="comment">&lt;!-- this is the header  --&gt;</span></li>
+                        <li>&lt;body&gt;</li>
+                        <ul>
+                            <li>&lt;h1&gt;good stories fam&lt;/h1&gt; <span class="comment">&lt;!-- headings --&gt;</span>
+                            </li>
+                            <li>&lt;h1&gt;good stories fam&lt;/h1&gt; <span class="comment">&lt;!-- headings --&gt;</span>
+                            </li>
+                            <li>&lt;p&gt;&lt;strong&gt;the six napoleons&lt;/strong&gt; this ones fuckin good</li>
+                            <li><span class="comment">&lt;!-- bullet point lists --&gt;</span></li>
+                            <li>&lt;ul&gt;</li>
+                            <ul>
+                                </li>
+                                <li>&lt;li&gt;Giant Rat of Sumatra&lt;/li&gt;</li>
+                            </ul>
+                            <li>&lt;/ul&gt;</li>
+    
+                            <li>&lt;!-- numbered lists--&gt;</li>
+                            <li>&lt;ol&gt;</li>
+                            <ul>
+                                <li>&lt;li&gt;Shoscombe Valley Place&lt;/li&gt;</li>
+                                <li>&lt;li&gt;Lady Francis Carfax&lt;/li&gt;</li>
+                            </ul>
+                            <li>&lt;/ol&gt;</li>
+                        </ul>
+                        <li>&lt;/body&gt;</li>
+                    </ul>
+                    <li>&lt;/html&gt;</li>
+                </ul>
+            </article>
+        </section>
+<section class="attributes">
+	<p>Any markup with information about your page would go into the head tag. Then any markup with the content of the
+		page (what displays for a user) would go into the body tag.</p>
+	<h2>Attributes:</h2>
+	<p>
+		All html tags can have attributes, that provide information about an element. </p>
+	<ul>
+		<li>&lt;tagname attributename=”attributevalue”&gt;content&lt;/tagname&gt;</li>
+		<li>&lt;h1 title=”Best sherlock story”&gt;Devil’s Foot&lt;/h1&gt;</li>
+		<li>P{ color:red}</li>
+		<li>Selector { property }</li>
+		<li>Always quote attribut values.</li>
+		<li>Always use lowercase attributes.</li>
+		<li>&lt;h1 title=”Best sherlock story”&gt;</li>
+		<li>Double quote around attribute values.</li>
+		<li></li>
+	</ul>
+	</p>
+</section>
+</section>
+    
+
+<div class="lists" id="tagsbox"> 
+    <section class="tags" id="tags-box1">
+        <h2>Tags:</h2>
+        <ul>
+            <li> &lt;a&gt; Anchor element</li>
+            <ul class="secondary">
+                <li>Defines a hyperlink. Add the attribute &lt;href&gt; to specify a url</li>
+                <li>To link a local file just “./xyz.jpg”</li>
+                <li>More here</li>
+            </ul>
+            <li>&lt;br&gt; new line</li>
+            <li>&lt;div&gt; Division element. Generic element to hold content. Considered a last result for when no other element is suitable</li>
+            The div element is probably the most commonly used HTML element of all.
+            <li>&lt;footer&gt; to organize the final content</li>
+            <li>&lt;h1&gt; to &lt;h6&gt; theres. 6 different heading tags</li>
+            Search engines use headings to structure content so
+            <li>&lt;hr&gt; horizontal rule. Line through the page</li>
+            <li>&lt;img:&gt;</li>
+            <ul class="secondary">
+                <li>Src attribute: &lt;img src&gt;Src specifies the path to the img</li>
+                <li>&lt;img alt=”girl with jacket”&gt;: specifies alt text for an image fr accessability. This is required</li>
+                <li>&lt;map&gt; defines an image map. More here</li>
+                <li>More here</li>
+            </ul>
+            <li>&lt;lang&gt;</li>
+            Should always be included in th init &lt;html&gt; tag. Declares language and assisted search engines and browsers. Can include 2 char country code as well:
+            <li>&lt;html lang=”en-US”&gt; or &lt;html lang=”en”</li>
+            <li>&lt;p&gt;</li>
+            style= “color:red;”&gt;
+            <li>&lt;picture&gt;</li>
+            <li>&lt;pre&gt;</li>
+            Identifies preformated text, like a poem
+            <li>&lt;title&gt;: defines extra info about an element. Its a tooltip you just add to elements</li>
+            <li>&lt;p title=”I’m a tooltip”&gt; &lt;h1 title=”I’m also a tooltip!”&gt;</li>
+            <li>&lt;section&gt;: general-purpose element for grouping. Befor header and footer generally</li>
+            <li>&lt;style&gt; attribute</li>
+            <li>&lt;tagname style=”property:value;”&gt;</li>
+            Background-color
+            Color (text color)
+            Font-family
+            Font-size
+            “Text-align: center;”
+        </ul>
+    </section>
+
+    <section class="tags" id="tags-box2">
+        <h2>Formatting Elements:</h2>
+        <ul>
+            <li>&lt;b&gt; - Bold text</li>
+            <li>&lt;strong&gt; - Important text</li>
+            <li>&lt;i&gt; - Italic text &lt;em&gt; - Emphasized text. Both are italisized</li>
+            <li>&lt;mark&gt; - Marked text- defines text that should be highlighted</li> 
+            <li>&lt;small&gt; - Smaller text</li>
+            <li>&lt;del&gt; - Deleted text - usually shows up as strikethrough text</li>
+            <li>&lt;ins&gt; - Inserted text - underline</li>
+            <li>&lt;sub&gt; - Subscript text</li>
+            <li>&lt;sup&gt; - Superscript text</li>
+        </ul>
+    </section>
+
+    <section class="tags" id="tags-box3">
+        <h2>Quotations and Citations</h2>
+        <ul>
+            <li>&lt;abbr&gt; identifies abbreviation or acronyms. Gives useful info to browsers translation systems and search engines. Add the title element to make it show the </li>
+            <li>&lt;abbr title=”World Health Organization&gt;WHO<li>&lt;/abbr&gt;</li>
+            <li>&lt;address&gt; defines contact info for author of doc. Can be email url, phone, physical address etc. 
+            Usually renders in italics and browsers add a line break before and after address elements</li>
+            <li>&lt;blockquote&gt; (indented)
+            Can add cite=”url” element</li>
+            <li>&lt;bdo&gt; Bi-directional override
+            Used to override current text direction. This ones weird it flips your text!</li>
+            <li>&lt;bdo dir="rtl"&gt;This text will be written from right to left<li>&lt;/bdo&gt;</li>
+            <li>&lt;cite&gt; defines title of creative work. Renders in italics</li>
+            Diff btwn this and blockquote cite element???
+            <li>&lt;p&gt;<li>&lt;cite&gt;The Scream&lt;/cite&gt; by Edvard Munch.&lt;/p&gt;</li>
+            <li>&lt;q&gt; short quotations. Browsers insert quotations around this text</li>
+        </ul>
+    </section>
+</div>
+
+    <span class="comment">&lt;!--Comments should be written with this syntax --&gt;</span>
+
+    
+
+    
+
+
+
+
+    <section class="linking">
+        <h1>Linking:</h1>
+
+        General things:
+            You can add the title attribute to give more info!
+        Target: you can add the target attribute to specify where the link will open
+        <ul>
+            _self - Default. Opens the document in the same window/tab as it was clicked
+            _blank - Opens the document in a new window or tab
+            _parent - Opens the document in the parent frame
+            _top - Opens the document in the full body of the window
+        </ul>
+        &lt;a href="url" target="_blank"&gt;
+        Mailto:
+        &lt;a href=“mailto:someone@gmail.com”&gt; mailto will open the user’s email program
+        Button as a link:
+        To use an HTML button as a link, you have to add some JavaScript code.
+        &lt;button onclick="document.location='default.asp'"&gt;HTML Tutorial&lt;/button&gt;
+        Link States:
+        a:link {
+        Color:green;
+        }
+        a:visited
+        a:hover
+        a:active
+        All allow you to change link state!
+        &lt;id&gt; Bookmarks
+        Id attribute will create a bookmark that you can link back to
+        &lt;p id=”C4”&gt;chapter 4&lt;/p&gt; create the bookmark
+        &lt;a href=”#C4”&gt; or &lt;a href=”default.html#C4”&gt; link the bookmark
+    </section>
+    
+    <section class="input">
+        <h1>Input</h1>
+        Type = “” 
+        Text, radio (bubble), checkbox
+        All related radio buttons should have the same name attribute to create a radio button group. By creating a radio group, selecting any single radio button will automatically deselect the other buttons within the same group ensuring only one answer is provided by the user.
+        It is considered best practice to set a for attribute on the label element, with a value that matches the value of the id attribute of the input element. This allows assistive technologies to create a linked relationship between the label and the child input element. For example:
+        placeholder= “” the grey text in an input field
+        required= add this element to make it impossible to submit form without filling field
+        Checked: will leave youre radio of checkbox checked by defult
+        Form
+        Action: put a url here to submit data to a sever at tht url, 
+        Button:
+        &lt;button type=””&gt;&lt;/button&gt;
+
+        &lt;form action="https://freecatphotoapp.com/submit-cat-photo"&gt;
+            &lt;label for="indoor"&gt;&lt;input id="indoor" type="radio" name="indoor-outdoor"&gt; Indoor&lt;/label&gt;
+            &lt;label for="outdoor"&gt;&lt;input id="outdoor" type="radio" name="indoor-outdoor"&gt; Outdoor&lt;/label&gt;&lt;br&gt;
+        
+            &lt;label for="skimby"&gt;&lt;input id="skimby" type="checkbox" name="personality"&gt; Skimby&lt;/label&gt;
+            &lt;label for="lovey-dovey"&gt;&lt;input id="lovey-dovey" type="checkbox" name="personality"&gt; lovey-dovey&lt;/label&gt;
+            &lt;label for="Hungry"&gt;&lt;input id="Hungry" type="checkbox" name="personality"&gt; Hungry&lt;/label&gt;&lt;br&gt;
+        
+            &lt;input type="text" placeholder="cat photo URL" required&gt;
+            &lt;button type="submit"&gt;Submit&lt;/button&gt;
+        &lt;/form&gt;
+        
+        &lt;h2&gt;forms&lt;/h2&gt; 
+        &lt;!-- with html you can control the LOOK of the form but u cant add functionality without another language. like PHP --&gt;
+            &lt;form action="process.php" method="POST"&gt;
+                &lt;div&gt;
+                    &lt;label&gt; Names for the dog &lt;/label&gt;
+                        &lt;input type="text" name="dog-name"&gt; &lt;!-- name has to do with server side programming --&gt;
+                &lt;/div&gt;&lt;br&gt;
+                &lt;div&gt;
+                    &lt;label&gt; What day did they meet &lt;/label&gt;
+                        &lt;input type="date" name="day they met"&gt;
+                &lt;/div&gt;
+        &lt;/form&gt;
+    </section>
+    
+    <section class="images">
+        <h1>Images</h1>
+        You need to keeped linked images in the same place relative to the webpage or it will break the link
+        Before putting an image on your site MAKE SURE it is a file type supported in most browsers!!
+        To use image as link put the &lt;a&gt; tag around the &lt;img&gt; tag
+
+        Size is specified in the style attribute
+        &lt;img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;"&gt;
+
+        Floating images: 
+        &lt;img src=”smile.gif” alt=”smiley face” style=”float:right;width:42px;height:42px;”&gt;
+        handled in CSS
+
+        &lt;map&gt; Image maps:
+        Creates an image with clickable areas that are defined with one or more &lt;area&gt; tages.
+        &lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt;
+
+        &lt;map name="workmap"&gt;
+        &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&gt;
+        &lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt;
+        &lt;area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm"&gt;
+        &lt;/map&gt;
+        To embed an image map you need to add the attribute  usemap=”#name”
+        The name must be the same as the &lt;map name&gt; later
+        Derfining image map with &lt;area&gt; element:
+        Image map must be one of the following shapes: 
+        Rect / circle / poly / default
+        Each of these is defined by a set of coordinates.
+        You can also add a click event to the area to execute a JS function
+    </section>
+
+    </body>
+</html>
